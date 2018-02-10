@@ -72,9 +72,7 @@
     <Compile Include="gtk-gui\MainWindow.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ventanaConsulta.cs" />
     <Compile Include="gtk-gui\DBEjemplo.ventanaConsulta.cs" />
-    <Compile Include="consuta.cs" />
     <Compile Include="gtk-gui\DBEjemplo.consuta.cs" />
     <Compile Include="wAlumnos.cs" />
     <Compile Include="gtk-gui\DBEjemplo.wAlumnos.cs" />
