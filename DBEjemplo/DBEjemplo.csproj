@@ -76,6 +76,12 @@
     <Compile Include="gtk-gui\DBEjemplo.ventanaConsulta.cs" />
     <Compile Include="consuta.cs" />
     <Compile Include="gtk-gui\DBEjemplo.consuta.cs" />
+    <Compile Include="wAlumnos.cs" />
+    <Compile Include="gtk-gui\DBEjemplo.wAlumnos.cs" />
+    <Compile Include="wPrestamos.cs" />
+    <Compile Include="gtk-gui\DBEjemplo.wPrestamos.cs" />
+    <Compile Include="wArticulos.cs" />
+    <Compile Include="gtk-gui\DBEjemplo.wArticulos.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

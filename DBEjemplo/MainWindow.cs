@@ -14,7 +14,7 @@ public partial class MainWindow: Gtk.Window{
 		Build ();
 		con = new MySqlConnection ("Server=localhost;" +
 			"Database=prestamos;Uid=phpmyadmin;Pwd=rafaja77");		
-		tvArticulos (vwConsultas);
+		//tvArticulos (vwConsultas);
 		
 		
 	
@@ -27,11 +27,7 @@ public partial class MainWindow: Gtk.Window{
 		tv.AppendColumn ("Carrera",new CellRendererText(),"text",4);
 	}
 
-	void tvArticulos(TreeView tv){
-		tv.AppendColumn ("ID",new CellRendererText(),"text",0);
-		tv.AppendColumn ("Nombre",new CellRendererText(),"text",1);
-		tv.AppendColumn ("Descripción",new CellRendererText(),"text",2);
-	}
+
 
 	ListStore dAlumnos(){
 		ListStore data = new ListStore (typeof(int),typeof(string),
@@ -50,20 +46,7 @@ public partial class MainWindow: Gtk.Window{
 		return data;
 	}
 
-	ListStore dArticulos(){
-		ListStore data = new ListStore (typeof(int),typeof(string),
-			typeof(string));
-		con.Open ();
-		comand = new MySqlCommand ("SELECT * FROM articulos",con);
-		dr = comand.ExecuteReader ();
-		while(dr.Read()){
-			data.AppendValues (int.Parse( dr[0].ToString()),
-				dr[1].ToString(),dr[2].ToString());
-		}
-		dr.Close ();
-		con.Close ();
-		return data;
-	}
+
 
 	protected void OnDeleteEvent (object sender, DeleteEventArgs a)
 	{
@@ -73,8 +56,9 @@ public partial class MainWindow: Gtk.Window{
 
 	protected void OnBtnArticulosClicked (object sender, EventArgs e)
 	{
-		
-		vwConsultas.Model = dArticulos ();
+		wArticulos av = new wArticulos ();
+		av.Show ();
+
 	}
 
 	protected void OnBtnAlumnosClicked (object sender, EventArgs e)
