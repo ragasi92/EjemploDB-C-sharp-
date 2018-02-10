@@ -1,0 +1,7 @@
+/home/ragasi92/Documents/CSharpProyectos/DBEjemplo/DBEjemplo/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/ragasi92/Documents/CSharpProyectos/DBEjemplo/DBEjemplo/obj/x86/Debug/DBEjemplo.gtk-gui.gui.stetic
+/home/ragasi92/Documents/CSharpProyectos/DBEjemplo/DBEjemplo/bin/Debug/MySql.Data.dll
+/home/ragasi92/Documents/CSharpProyectos/DBEjemplo/DBEjemplo/bin/Debug/DBEjemplo.exe.mdb
+/home/ragasi92/Documents/CSharpProyectos/DBEjemplo/DBEjemplo/bin/Debug/DBEjemplo.exe
+/home/ragasi92/Documents/CSharpProyectos/DBEjemplo/DBEjemplo/obj/x86/Debug/DBEjemplo.exe
+/home/ragasi92/Documents/CSharpProyectos/DBEjemplo/DBEjemplo/obj/x86/Debug/DBEjemplo.exe.mdb
