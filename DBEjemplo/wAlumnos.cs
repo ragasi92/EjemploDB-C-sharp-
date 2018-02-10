@@ -18,6 +18,11 @@ namespace DBEjemplo
 				"Database=prestamos;Uid=phpmyadmin;Pwd=rafaja77");
 			tvAlumnos (vwAlumnos);
 			vwAlumnos.Model = dAlumnos ();
+			cmbCarrera.AppendText ("IC");
+			cmbCarrera.AppendText ("ICE");
+			cmbCarrera.AppendText ("ENF");
+			cmbCarrera.AppendText ("PSI");
+
 		}
 
 		void tvAlumnos(TreeView tv){
@@ -45,6 +50,34 @@ namespace DBEjemplo
 			dr.Close ();
 			con.Close ();
 			return data;
+		}
+
+	
+		protected void OnBtnGuardarClicked (object sender, EventArgs e)
+		{
+			con.Open ();
+			comand = new MySqlCommand ("INSERT INTO `alumnos`(" +
+				"`alumno_nombre`, `alumno_apellidop`, `alumno_apellidom`, " +
+				"`alumno_carrera`) " +
+				"VALUES (?nm,?ap,?am,?car)",con);
+			//comand.Parameters.Add ("?id", MySqlDbType.Int32).Value = id ();
+			comand.Parameters.Add ("?nm", MySqlDbType.VarChar).Value = txtNombre.Text;
+			comand.Parameters.Add ("?ap", MySqlDbType.VarChar).Value = txtAP.Text;
+			comand.Parameters.Add ("?am", MySqlDbType.VarChar).Value = txtAM.Text;
+			comand.Parameters.Add ("?car", MySqlDbType.VarChar).Value = cmbCarrera.ActiveText;
+			if (comand.ExecuteNonQuery()>0) {
+				con.Close ();
+				limpiar ();
+				vwAlumnos.Model = dAlumnos ();
+			} else {
+				Console.WriteLine ("Problema");
+			}
+		}
+
+		private void limpiar(){
+			txtAM.Text = "";
+			txtAP.Text = "";
+			txtNombre.Text = "";
 		}
 	}
 }

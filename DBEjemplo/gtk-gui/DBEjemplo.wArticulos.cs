@@ -12,15 +12,15 @@ namespace DBEjemplo
 		
 		private global::Gtk.Label label3;
 		
-		private global::Gtk.Entry entry1;
+		private global::Gtk.Entry txtNombre;
 		
 		private global::Gtk.HBox hbox8;
 		
 		private global::Gtk.Label label4;
 		
-		private global::Gtk.Entry entry3;
+		private global::Gtk.Entry txtDesc;
 		
-		private global::Gtk.Button button26;
+		private global::Gtk.Button btnAgregar;
 		
 		private global::Gtk.Label label1;
 		
@@ -42,7 +42,7 @@ namespace DBEjemplo
 			// Container child vbox2.Gtk.Box+BoxChild
 			this.label2 = new global::Gtk.Label ();
 			this.label2.Name = "label2";
-			this.label2.LabelProp = global::Mono.Unix.Catalog.GetString ("label2");
+			this.label2.LabelProp = global::Mono.Unix.Catalog.GetString ("Agregar Artículo");
 			this.vbox2.Add (this.label2);
 			global::Gtk.Box.BoxChild w1 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.label2]));
 			w1.Position = 0;
@@ -55,20 +55,20 @@ namespace DBEjemplo
 			// Container child hbox7.Gtk.Box+BoxChild
 			this.label3 = new global::Gtk.Label ();
 			this.label3.Name = "label3";
-			this.label3.LabelProp = global::Mono.Unix.Catalog.GetString ("label3");
+			this.label3.LabelProp = global::Mono.Unix.Catalog.GetString ("Nombre: ");
 			this.hbox7.Add (this.label3);
 			global::Gtk.Box.BoxChild w2 = ((global::Gtk.Box.BoxChild)(this.hbox7 [this.label3]));
 			w2.Position = 0;
 			w2.Expand = false;
 			w2.Fill = false;
 			// Container child hbox7.Gtk.Box+BoxChild
-			this.entry1 = new global::Gtk.Entry ();
-			this.entry1.CanFocus = true;
-			this.entry1.Name = "entry1";
-			this.entry1.IsEditable = true;
-			this.entry1.InvisibleChar = '•';
-			this.hbox7.Add (this.entry1);
-			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.hbox7 [this.entry1]));
+			this.txtNombre = new global::Gtk.Entry ();
+			this.txtNombre.CanFocus = true;
+			this.txtNombre.Name = "txtNombre";
+			this.txtNombre.IsEditable = true;
+			this.txtNombre.InvisibleChar = '•';
+			this.hbox7.Add (this.txtNombre);
+			global::Gtk.Box.BoxChild w3 = ((global::Gtk.Box.BoxChild)(this.hbox7 [this.txtNombre]));
 			w3.Position = 1;
 			this.vbox2.Add (this.hbox7);
 			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.hbox7]));
@@ -82,20 +82,20 @@ namespace DBEjemplo
 			// Container child hbox8.Gtk.Box+BoxChild
 			this.label4 = new global::Gtk.Label ();
 			this.label4.Name = "label4";
-			this.label4.LabelProp = global::Mono.Unix.Catalog.GetString ("label4");
+			this.label4.LabelProp = global::Mono.Unix.Catalog.GetString ("Descripción: ");
 			this.hbox8.Add (this.label4);
 			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.hbox8 [this.label4]));
 			w5.Position = 0;
 			w5.Expand = false;
 			w5.Fill = false;
 			// Container child hbox8.Gtk.Box+BoxChild
-			this.entry3 = new global::Gtk.Entry ();
-			this.entry3.CanFocus = true;
-			this.entry3.Name = "entry3";
-			this.entry3.IsEditable = true;
-			this.entry3.InvisibleChar = '•';
-			this.hbox8.Add (this.entry3);
-			global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.hbox8 [this.entry3]));
+			this.txtDesc = new global::Gtk.Entry ();
+			this.txtDesc.CanFocus = true;
+			this.txtDesc.Name = "txtDesc";
+			this.txtDesc.IsEditable = true;
+			this.txtDesc.InvisibleChar = '•';
+			this.hbox8.Add (this.txtDesc);
+			global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.hbox8 [this.txtDesc]));
 			w6.Position = 1;
 			this.vbox2.Add (this.hbox8);
 			global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.hbox8]));
@@ -103,20 +103,20 @@ namespace DBEjemplo
 			w7.Expand = false;
 			w7.Fill = false;
 			// Container child vbox2.Gtk.Box+BoxChild
-			this.button26 = new global::Gtk.Button ();
-			this.button26.CanFocus = true;
-			this.button26.Name = "button26";
-			this.button26.UseUnderline = true;
-			this.button26.Label = global::Mono.Unix.Catalog.GetString ("GtkButton");
-			this.vbox2.Add (this.button26);
-			global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.button26]));
+			this.btnAgregar = new global::Gtk.Button ();
+			this.btnAgregar.CanFocus = true;
+			this.btnAgregar.Name = "btnAgregar";
+			this.btnAgregar.UseUnderline = true;
+			this.btnAgregar.Label = global::Mono.Unix.Catalog.GetString ("Agregar");
+			this.vbox2.Add (this.btnAgregar);
+			global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.btnAgregar]));
 			w8.Position = 3;
 			w8.Expand = false;
 			w8.Fill = false;
 			// Container child vbox2.Gtk.Box+BoxChild
 			this.label1 = new global::Gtk.Label ();
 			this.label1.Name = "label1";
-			this.label1.LabelProp = global::Mono.Unix.Catalog.GetString ("label1");
+			this.label1.LabelProp = global::Mono.Unix.Catalog.GetString ("Lista de artículos");
 			this.vbox2.Add (this.label1);
 			global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.label1]));
 			w9.Position = 4;
@@ -141,6 +141,7 @@ namespace DBEjemplo
 			this.DefaultWidth = 400;
 			this.DefaultHeight = 300;
 			this.Show ();
+			this.btnAgregar.Clicked += new global::System.EventHandler (this.OnBtnAgregarClicked);
 		}
 	}
 }
